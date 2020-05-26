@@ -22,7 +22,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <start-class>guru.springfraework.sfgpetclinic</start-class>
+        <start-class>guru.springframework.sfgpetclinic</start-class>
     </properties>
 
     <build>
@@ -31,6 +31,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+
         </plugins>
     </build>
 
