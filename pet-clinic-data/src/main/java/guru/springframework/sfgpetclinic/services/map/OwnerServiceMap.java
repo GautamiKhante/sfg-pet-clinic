@@ -15,7 +15,7 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     private PetTypeService petTypeService;
     private PetService petService;
 
-    public OwnerServiceMap(PetTypeMapService petTypeService, PetService petService) {
+    public OwnerServiceMap(PetTypeService petTypeService, PetService petService) {
         this.petTypeService = petTypeService;
         this.petService = petService;
     }
