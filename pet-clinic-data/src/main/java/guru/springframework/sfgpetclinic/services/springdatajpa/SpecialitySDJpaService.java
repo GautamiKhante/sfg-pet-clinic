@@ -1,9 +1,8 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
-import guru.springfraework.repositories.SpecialityRepository;
 import guru.springframework.sfgpetclinic.model.Speciality;
+import guru.springframework.sfgpetclinic.repositories.SpecialityRepository;
 import guru.springframework.sfgpetclinic.services.SpecialityService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +15,6 @@ public class SpecialitySDJpaService implements SpecialityService {
 
     private final SpecialityRepository specialityRepository;
 
-    @Autowired
     public SpecialitySDJpaService(SpecialityRepository specialityRepository) {
         this.specialityRepository = specialityRepository;
     }

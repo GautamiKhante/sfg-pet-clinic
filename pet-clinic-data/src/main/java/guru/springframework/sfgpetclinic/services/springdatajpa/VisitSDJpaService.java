@@ -1,7 +1,7 @@
 package guru.springframework.sfgpetclinic.services.springdatajpa;
 
-import guru.springfraework.repositories.VisitReository;
 import guru.springframework.sfgpetclinic.model.Visit;
+import guru.springframework.sfgpetclinic.repositories.VisitReository;
 import guru.springframework.sfgpetclinic.services.VisitService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -14,7 +14,6 @@ import java.util.Set;
 public class VisitSDJpaService implements VisitService {
 
     private final VisitReository visitReository;
-
 
     public VisitSDJpaService(VisitReository visitReository) {
         this.visitReository = visitReository;
