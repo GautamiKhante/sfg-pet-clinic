@@ -1,11 +1,11 @@
 package guru.springframework.sfgpetclinic.model;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Entity
+@Table(name = "vet")
 public class Vet extends Person {
 
     @ManyToMany
